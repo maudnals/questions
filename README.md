@@ -3,7 +3,16 @@
 
 ## HTML
 
-**What's the diff between querySelector and getElementById?**
+**What's the diff between querySelector and getElementById?** 
+
+## CSS
+ 
+**CSS class: .x .y vs x.y**  
+**CSS class: not** 
+
+## JS: core
+
+**Async with babel**
 
 ## Build process
 
@@ -20,7 +29,16 @@ An HTML loader (in webpack.config.js)
 
 ## Real-time
 
-**Message broker: what's the diff between a topic and queue, and when would you use one over the other?**
+**Message broker: what's the diff between a topic and queue, and when would you use one over the other?**  
+
+## Data structures
+
+**Is that a tree?**
+**Traverse a tree**
+
+## Frameworks 
+
+**React: you shouldn't mount on body tag, why?**
 
 ## Node
 
@@ -28,4 +46,8 @@ An HTML loader (in webpack.config.js)
 
 **How to start a simple http server with node?**
 `node http-server` (in the correct directory)
+
+## Opinions  
+
+**Why didn’t polymer get love from the community?**
 
