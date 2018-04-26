@@ -33,8 +33,8 @@ An HTML loader (in webpack.config.js)
 
 ## Data structures
 
-**Is that a tree?**
-**Traverse a tree** 
+**Is that a tree?**  
+**Traverse a tree**  
 **Write a state machine**
 
 ## Frameworks 
