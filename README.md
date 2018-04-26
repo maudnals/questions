@@ -4,7 +4,16 @@
 ## HTML
 
 **What's the diff between querySelector and getElementById?**  
-querySelector is faster
+querySelector is faster 
+
+## Browsers
+ 
+**What's teh main difference between Safari and Chrome?**  
+Rendering engine
+WebKit vs others => not the same tech support (e.g.
+Also some minor differences in implementations (stroke-dash direction) 
+Also in general Safari is more buggy (scroll behaviour: fixes needed, flexbox, etc.) 
+Also political because they are tied to fifferent vendors (service workers in Safari) 
 
 ## CSS
  
@@ -23,10 +32,12 @@ querySelector is faster
    html {
      font-size: 16px;
    }
-}`
+}`  
 
-**How would you implement style changes for a 4k screen (vs dev mode)**" 
+**How would you implement a theming system with css variables?** 
 
+**Should one always use sass?**  
+My favorite combination: sass for syntax capabilities (write less code) + css variables (instead of sass variables) for runtime variables. However, this depends on browser support (IE doesn't support CSS variables)
 
 ## JS: core
 
