@@ -3,18 +3,38 @@
 
 ## HTML
 
-**What's the diff between querySelector and getElementById?** 
+**What's the diff between querySelector and getElementById?**  
+querySelector is faster
 
 ## CSS
  
 **CSS class: .x .y vs x.y**  
-**CSS class: not** 
+**CSS class: not**  
+**How to programmatically change a class in JS?"**  
+**How would you implement style changes for a 4k screen (vs dev mode)?**  
+`// Developer mode
+@media screen and (min-width: 1367px) and (max-width: 3839px) {
+   html {
+     font-size: 8px;
+   }
+}
+// Large 4K screen
+@media screen and (min-width: 3840px) {
+   html {
+     font-size: 16px;
+   }
+}`
+
+**How would you implement style changes for a 4k screen (vs dev mode)**" 
+
 
 ## JS: core
 
 **Async with babel**
 
-## Build process
+## Build process  
+
+**Where does "env" come from?**
 
 **Webpack: what's the difference between devServer and server?**
 
