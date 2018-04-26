@@ -9,13 +9,13 @@
 
 **Webpack: what's the difference between devServer and server?**
 
-**Webpack: should you install webpack locally or globally?**
+**Webpack: should you install webpack locally or globally?**  
 Install Globally (`npm install -g webpack`):
-When installed globally, webpack can be run using webpack command from the Command prompt/Terminal window.
+When installed globally, webpack can be run using webpack command from the Command prompt/Terminal window.  
 Install locally in the project folder (`npm install webpack --save-dev`):
 When installed locally, you need to run webpack via npm script.
 
-**Webpack: What is needed to require an HTML file as follows in index.js: `require('./index.html');`?**
+**Webpack: What is needed to require an HTML file as follows in index.js: `require('./index.html');`?**  
 An HTML loader (in webpack.config.js)
 
 ## Real-time
