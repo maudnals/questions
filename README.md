@@ -65,11 +65,15 @@ When installed locally, you need to run webpack via npm script, but it's better 
 **Webpack: What is needed to require an HTML file as follows in index.js: `require('./index.html');`?**  
 An HTML loader (in webpack.config.js)  
 
-**Webpack: which module system should webpack configs use?**   
+**Webpack: which module system should webpack configs use?**    
 
 CommonJS (because node!)
 => `module.exports` , `require`
-
+ 
+ 
+**Webpack: what do the following do?**     
+path.join(__dirname, 'dist') --> returns the correct file path of currentDirectory/dist. 
+path.resolve(__dirname, "../") --> returns the correct file path of parentDirectory/dist.
  
 **Yarn vs npm: what's the difference?** 
 Yarn was developed by Facebook in attempt to resolve some of npm’s shortcomings. Yarn isn’t technically a replacement for npm since it relies on modules from the npm registry. Think of Yarn as a new installer that still relies upon the same npm structure, and makes the same packages available. Yarn introduced a yarn.lock feature for deterministic dependency installs (just like with an npm shrinkwrap file, but in npm this wasn't automatic and required maintenance). Then with the release of npm 5, package-lock.json was added also to npm. 
