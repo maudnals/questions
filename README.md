@@ -45,9 +45,9 @@ My favorite combination: sass for syntax capabilities (write less code) + css va
 
 ## Modules 
 
-**ES6 modules: what's the syntax?**
-myModule --- `export default hi;` 
-index --- `import hello from './myModule';` (can use `hello` or whatever I like because export is default)
+**ES6 modules: what's the syntax?**  
+myModule.js --- `export default hi;`   
+index.js --- `import hello from './myModule';` (can use `hello` or whatever I like because export is default)
 
 
 ## Build process  
