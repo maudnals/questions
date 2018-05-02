@@ -65,10 +65,10 @@ When installed locally, you need to run webpack via npm script, but it's better 
 **Webpack: What is needed to require an HTML file as follows in index.js: `require('./index.html');`?**  
 An HTML loader (in webpack.config.js)  
 
-**Webpack: which modeule system should webpack configs use?**  
-CommonJS (because node!). 
-=>  
-`module.exports` , `require`
+**Webpack: which module system should webpack configs use?**   
+
+CommonJS (because node!)
+=> `module.exports` , `require`
 
  
 **Yarn vs npm: what's the difference?** 
