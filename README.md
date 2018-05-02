@@ -41,7 +41,14 @@ My favorite combination: sass for syntax capabilities (write less code) + css va
 
 ## JS: core
 
-**Async with babel**
+**Async with babel**  
+
+## Modules 
+
+**ES6 modules: what's the syntax?**
+myModule --- `export default hi;` 
+index --- `import hello from './myModule';` (can use `hello` or whatever I like because export is default)
+
 
 ## Build process  
 
