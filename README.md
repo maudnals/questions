@@ -70,6 +70,15 @@ When installed locally, you need to run webpack via npm script, but it's better 
 **Webpack: What is needed to require an HTML file as follows in index.js: `require('./index.html');`?**  
 An HTML loader (in webpack.config.js)  
 
+
+**Wepack: what's the benefot of wrapping the config object as the return value of a function, instead of returning it directly?**  
+e.g.:  
+`module.exports = function(env) {
+  return commonConfig;
+}`  
+Thanks to the function we can pass in arguments, such as the environment, and use them to build an appropriate config object that we then return.  
+
+
 **Webpack: which module system should webpack configs use?**    
 
 CommonJS (because node!)
