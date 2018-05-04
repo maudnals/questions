@@ -56,6 +56,11 @@ index.js --- `import hello from './myModule';` (can use `hello` or whatever I li
 
 **Webpack: what's the difference between devServer and server?**
 
+**Webpack: what is webpack-merge for?**   
+It's useful to merge webpack configurations (common+dev or common+prod).  
+Under the hood it's a bit like `object.assign`, but with a lot of webpack-specific functionality (regarding the order, for example).
+
+
 **Webpack: should you install webpack locally or globally?**  
 Install Globally (`npm install -g webpack`):
 When installed globally, webpack can be run using webpack command from the Command prompt/Terminal window.  
