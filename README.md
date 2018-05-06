@@ -58,8 +58,11 @@ index.js --- `import hello from './myModule';` (can use `hello` or whatever I li
 
 **Webpack: what is webpack-merge for?**   
 It's useful to merge webpack configurations (common+dev or common+prod).  
-Under the hood it's a bit like `object.assign`, but with a lot of webpack-specific functionality (regarding the order, for example).
+Under the hood it's a bit like `object.assign`, but with a lot of webpack-specific functionality (regarding the order, for example).  
 
+ 
+**Webpack: what is the HtmlWebpackPlugin for?**   
+It creates a boilerplate HTML file that includes the bundles that webpack built.
 
 **Webpack: should you install webpack locally or globally?**  
 Install Globally (`npm install -g webpack`):
