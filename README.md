@@ -62,7 +62,7 @@ Under the hood it's a bit like `object.assign`, but with a lot of webpack-specif
 
  
 **Webpack: what is the HtmlWebpackPlugin for?**   
-It creates a boilerplate HTML file that includes the bundles that webpack built.
+It creates a boilerplate HTML file that includes the bundles that webpack builds. Especially useful when leveraging long-term vendor hashing (e.g. bundle name is hashed using the chunkhash template helper), so we don't need to update manually the bundle name in index.html
 
 **Webpack: should you install webpack locally or globally?**  
 Install Globally (`npm install -g webpack`):
