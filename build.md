@@ -63,11 +63,11 @@ Not very intuitive: `module` is an object in which is defined how webpack should
 
 **How does a typical folder structure look like for webpack config?**  
 `webpack.config.js`  (using webpackMerge)
-`build-utils/` 
-|
---- `webpack.common.js`
---- `webpack.dev.js`
---- `webpack.prod.js`
+`build-utils/`   
+|  
+--- `webpack.common.js`  
+--- `webpack.dev.js`  
+--- `webpack.prod.js`  
 --- `common-paths.js`
  
 
