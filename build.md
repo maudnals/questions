@@ -56,6 +56,18 @@ CommonJS (because node!)
  
 **What do the following do?**     
 path.join(__dirname, 'dist') --> returns the correct file path of currentDirectory/dist. 
-path.resolve(__dirname, "../") --> returns the correct file path of parentDirectory/dist.
+path.resolve(__dirname, "../") --> returns the correct file path of parentDirectory/dist.  
+
+**What does `module` mean in `webpack.config.js`?**  
+Not very intuitive: `module` is an object in which is defined how webpack should deal with different types of modules. In the webpack sense, a module can be: an ES2015 import, an AMD require, a CommonJS require(), a CSS/SaSS/less @import, an image url in a stylesheet (url(...)) or html (<img src=...>) file.  
+
+**How does a typical folder structure look like for webpack config?**  
+`webpack.config.js`  (using webpackMerge)
+`build-utils/` 
+|
+--- `webpack.common.js`
+--- `webpack.dev.js`
+--- `webpack.prod.js`
+--- `common-paths.js`
  
 
