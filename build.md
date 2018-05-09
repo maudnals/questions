@@ -62,7 +62,8 @@ path.resolve(__dirname, "../") --> returns the correct file path of parentDirect
 Not very intuitive: `module` is an object in which is defined how webpack should deal with different types of modules. In the webpack sense, a module can be: an ES2015 import, an AMD require, a CommonJS require(), a CSS/SaSS/less @import, an image url in a stylesheet (url(...)) or html (<img src=...>) file.  
 
 **How does a typical folder structure look like for webpack config?**  
-`webpack.config.js`  (using webpackMerge)
+`webpack.config.js`  (using webpackMerge)  
+
 `build-utils/`   
 |  
 --- `webpack.common.js`  
