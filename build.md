@@ -26,7 +26,8 @@ It's very nice for small assets, for which it's more performant to have it inlin
 **What is webpack-dev-server, how does it work, and why is it useful?** 
 When developing an SPA, a dev server is useful, in order to serve static content.  
 webpack-dev-server is a node module that is webpack's dev server.  
-It uses express behind the scenes - it automatically emits bundles in memory and fire web socket requests to the web server so that the app updates automatically in the browser.
+It uses express behind the scenes - it automatically emits bundles in memory and fire web socket requests to the web server so that the app updates automatically in the browser.  
+A great popular feature is hot module reloading (browser refreshes automatically when changes are made), but also on top of that it enables for a rich dev environment/tooling.
 
 **What is webpack-merge for?**   
 It's useful to merge webpack configurations (common+dev or common+prod).  
