@@ -21,7 +21,12 @@ Push it. That's the whole point. When you run either yarn or yarn add <package>,
 Webpack plugin url-loader will convert any asset url (either a path required from JS, or an asset URL in css) into a base-64 string inlined into my bundle. 
 It's very nice for small assets, for which it's more performant to have it inlined in the bundle rather than making a new network request just for this.  
 
-**What's the difference between devServer and server?**
+**What's the difference between devServer and server?**   
+
+**What is webpack-dev-server, how does it work, and why is it useful?** 
+When developing an SPA, a dev server is useful, in order to serve static content.  
+webpack-dev-server is a node module that is webpack's dev server.  
+It uses express behind the scenes - it automatically emits bundles in memory and fire web socket requests to the web server so that the app updates automatically in the browser.
 
 **What is webpack-merge for?**   
 It's useful to merge webpack configurations (common+dev or common+prod).  
