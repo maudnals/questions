@@ -17,6 +17,7 @@ WebKit vs others => not the same tech support (e.g.
 Also some minor differences in implementations (stroke-dash direction) 
 Also in general Safari is more buggy (scroll behaviour: fixes needed, flexbox, etc.) 
 Also political because they are tied to fifferent vendors (service workers in Safari) 
++++ add history on there
 
 ## CSS
  
