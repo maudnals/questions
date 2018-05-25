@@ -2,4 +2,5 @@
 JSX (return value of render() method) compiles to `React.createElement(...)`.  
 
 ### props vs state?  
-props = a configuration. Stays the same at runtime.
+props = a configuration (as a JS object, e.g. `{className: "app"}`).  
+Stays the same at runtime.
