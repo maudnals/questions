@@ -1,4 +1,4 @@
-**ES6 modules: import/export syntax for default?**  
+**ES6 modules: what's the import/export syntax for default?**  
 file `X.js`:   
 `export default X;` // whenever import is called on that file, the export will be X.  
 file `Y.js`:   
@@ -6,4 +6,9 @@ file `Y.js`:
 `import X from './path/to/X'` 
 
 Beware:  
-`import { X } from './path/to/X';` // This will break since this {} syntax is for **named** exports.
+`import { X } from './path/to/X';` // This will break since this {} syntax is for **named** exports.   
+
+
+**CommomJS modules vs ES6 modules: syntax diff?**   
+CommomJS (node): `module.exports` , `require` 
+ES6: `import x from '...'`, `import {x} from '...'`, `export`, `export default`
