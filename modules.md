@@ -9,6 +9,9 @@ Beware:
 `import { X } from './path/to/X';` // This will break since this {} syntax is for **named** exports.   
 
 
-**CommomJS modules vs ES6 modules: syntax diff?**   
+**CommonJS modules vs ES6 modules: syntax diff?**   
 CommomJS (node): `module.exports` , `require` 
-ES6: `import x from '...'`, `import {x} from '...'`, `export`, `export default`
+ES6: `import x from '...'`, `import {x} from '...'`, `export`, `export default`.   
+
+**What's a react component?**   
+It's a function returning some JSX.
