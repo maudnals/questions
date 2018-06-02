@@ -73,7 +73,12 @@ index.js --- `import hello from './myModule';` (can use `hello` or whatever I li
 **What is node?**
 
 **How to start a simple http server with node?**
-`node http-server` (in the correct directory)
+`node http-server` (in the correct directory)   
+
+## Angular  
+
+** How to create a singleton service?  
+In ng 6, use forRoot in service definition.
 
 ## Opinions  
 
