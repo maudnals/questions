@@ -92,5 +92,8 @@ Use ES6 arrow functions to keep the reference `this`--- this class, to be able t
 Use `this.setState()`.  
 NOT NEEDED: `this.setState(Object.assign(this.state,...)`  
 React already does that under the hood within `setState()`: the argument of `setState` gets merged with the
-original state. 
+original state.  
+
+## GOTCHAS  
+* when a prop is not passed, it fails silently. Just nothing displayed or called.
 
