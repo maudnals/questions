@@ -82,4 +82,13 @@ NB:
 A function that returns some JSX. 
 
 ## What does `this` refers to in a `class X extends Component`?  
-To the class (that's just ES6).
+To the class (that's just ES6). 
+
+## About event handlers? 
+Use ES6 arrow functions to keep the reference `this`--- this class, to be able to access state. 
+
+## How to change state? 
+Use `this.setState()`.  
+NOT NEEDED: `this.setState(Object.assign(this.state,...)`  
+React already does that under the hood within `setState()`.
+
