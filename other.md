@@ -14,7 +14,18 @@ A react app is typucally component tree:
 
 ### What's JSX?  
 JSX is JS that looks like HTML. Compiled onto JS via Babel.  
-JSX is just syntactic sugar for JavaScript, allowing to write HTMLish code instead of nested `React.createElement(...)` calls.
+JSX is just syntactic sugar for JavaScript, allowing to write HTMLish code instead of nested `React.createElement(...)` calls.  
+E.g.:   
+`return React.createElement("div", { className: "App" }, // ... and other nested calls for nested elements` 
+becomes  
+    `return (
+      <div className="App">
+        // nest elements normally just like in HTML
+      </div>
+    );`.  
+    Much nicer.
+
+
 
 ### JSX constraints? 
 * Only one parent (buyt not anymore actually)  
