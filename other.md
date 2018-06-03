@@ -1,5 +1,13 @@
-### Where exactly is the `React` variable used in a React component?   
-JSX (return value of render() method) compiles to `React.createElement(...)`.   
+### Where exactly is the `React` import used in a React component?   
+JSX (return value of render() method) compiles to `React.createElement(...)`.    
+
+### What's the correct notation when importing a component?  
+`Person.js`: // capital P is a just convention  
+`export default person; // here by convention: use uppercase P for smart components and lowercase p for dumb (functional) components.`  
+`X.js`:   
+`import Person from 'path/to/Person.js'; // !!! for JSX to understand Person as a react component the capital letter is a must (even if the export is default so in a non-react context it can be named whatever).` 
+
+
 
 ### What's JSX?  
 JS that looks like HTML. Complied onto JS via Babel.
