@@ -101,5 +101,8 @@ original state.
 * State remains in the container component  
 * Keep the inner component functional  
 * If an event from inside the functional component needs to change state, e.g. change its age:  
-   *  gddg
+   * pass the handler (defined in the container component) to the inner component as a **prop**  
+   * if the state change relates to this inner component (e.e. change own age), use **bind** : 
+   `increaseAgeHandler={this.increaseAgeHandler.bind(this, this.state.persons[2])}` 
+   Reminder: bind createa a new function, it doesn't execute anything.
 
