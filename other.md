@@ -61,11 +61,16 @@ export default Person;
 
 Both propos and state are JS objects.
 
-Props = (JSX attributes) = passed from outside, stays the same at runtime.     
+Props = (JSX attributes) = passed from outside (i.e. from a parent=wrapping
+component to a child=embedded component). **Stays the same at runtime.**     
 E.g.: a card name should be a prop.   
 
-State: managed inside, useful when need changes at runtime.  
+State: managed inside. 
+**Can be changed at runtime**. When the state changes, and **only** when the state changes, React checks whether to update the DOM.  
 E.g.: a card state such as "active" or "inactive" should be a state. 
 
 ## What's a react component?  
-A function that returns some JSX.
+A function that returns some JSX. 
+
+## What does `this` refers to in a `class X extends Component`?  
+To the class (that's just ES6).
