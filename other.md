@@ -40,7 +40,8 @@ const person = (props) => {
   return <div>{props.name}</div>;  
 }  
 export default person;
-```  
+```   
+Very simple about what it does: only renders something to the DOM. Dynamic thanks to props. <= Use functional components as often as possible, since they are simpler and don't manipulate app state.
 
 **Smart component (= stateful = class-based = container)**   
 `Person.js`:   
@@ -60,7 +61,7 @@ export default Person;
 ### Props vs State?    
 What they have in common:  
 * Both props and state are JS objects.   
-* Changes to props and state trigger an UI update (a targeted DOM updated after running diff algorithm against virtual DOM).  
+* Changes to props and state trigger an UI update (a targeted DOM updated after running diff algorithm against virtual DOM). More speciccally a change in the DOM happens only if one of these change.  
 
 How they're different:  
 
@@ -87,9 +88,9 @@ To the class (that's just ES6).
 ## About event handlers? 
 Use ES6 arrow functions to keep the reference `this`--- this class, to be able to access state. 
 
-## How to change state? 
+## How to mutate the state? 
 Use `this.setState()`.  
 NOT NEEDED: `this.setState(Object.assign(this.state,...)`  
 React already does that under the hood within `setState()`: the argument of `setState` gets merged with the
-original state.
+original state. 
 
