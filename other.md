@@ -4,7 +4,8 @@ JSX (return value of render() method) compiles to `React.createElement(...)`.
 ### What are two ways of creating a react component?  
 Dumb component (no state):  
 `Person.js`:  
-`import React from 'react';   
+``javascript 
+import React from 'react';   
 const person = (props) => {  
   return <div>{props.name}</div>;  
 }  
