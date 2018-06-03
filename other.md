@@ -16,6 +16,10 @@ A react app is typucally component tree:
 JSX is JS that looks like HTML. Compiled onto JS via Babel.  
 JSX is just syntactic sugar for JavaScript, allowing to write HTMLish code instead of nested `React.createElement(...)` calls.
 
+### JSX constraints? 
+* Only one parent (buyt not anymore actually)  
+* Some words forbidden because they're JS, e.g. `class` (--> `className`) 
+
 ### What are two ways of creating a react component?  
 **Dumb component (= stateless = functional = presentational)**  
 `Person.js`:   
