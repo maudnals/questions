@@ -2,8 +2,8 @@
 JSX (return value of render() method) compiles to `React.createElement(...)`.   
 
 ### What are two ways of creating a react component?  
-**Dumb component (no state):**  
-`Person.js`   
+**Dumb component (no state)**  
+`Person.js`:   
 ```javascript
 import React from 'react';   
 const person = (props) => {  
@@ -12,8 +12,8 @@ const person = (props) => {
 export default person;
 ```  
 
-**Smart component (internal state)** 
-`Person.js`   
+**Smart component (internal state)**   
+`Person.js`:   
 ```javascript
 import React, { Component } from 'react';   
 class Person extens Component {  
