@@ -108,5 +108,5 @@ original state.
    
 ## How to apply styles?   
 In `Person.js`:
-`import './Person.css';` // syntax is... just like a JS import! Thanks to webpack, which will transform this and import the right file.
+`import './Person.css';` // syntax is... just like a JS import! Webpack will transform this and import the right file in `index.html`.
 
