@@ -65,11 +65,13 @@ What they have in common:
 How they're different:  
 
 Props = (JSX attributes) = passed from outside (i.e. from a parent=wrapping
-component to a child=embedded component).  
+component to a child=embedded component).   
+Under the hood: props are custom JSX properties (HTML-attribute-like). 
 E.g.: a card name should be a prop.   
 
 State: managed inside. 
 **Can be changed at runtime from within**. When the state changes, React checks whether to update the DOM.  
+Under the hood: state is a class ppty of the `Component` class.
 E.g.: a card state such as "active" or "inactive" should be a state.  
 NB:   
 * The name `state` is mandatory.  
