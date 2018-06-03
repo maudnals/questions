@@ -73,7 +73,7 @@ E.g.: a card name should be a prop.
 State: managed inside. 
 **Can be changed at runtime from within**. When the state changes, React checks whether to update the DOM.  
 Under the hood: state is a class ppty of the `Component` class.
-E.g.: a card state such as "active" or "inactive" should be a state.  
+~~E.g.: a card state such as "active" or "inactive" should be a state. ~~// No: in that case, active should be kept as **state** of the container component which anyhow already has a list of cards in its state. This way we limit the number of states on the app.
 NB:   
 * The name `state` is mandatory.  
 * State can only be manipulated by class-based components.  
