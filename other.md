@@ -46,7 +46,8 @@ export default Person;
 
 props = a configuration (as a JS object, e.g. `{className: "app"}`).  
 Stays the same at runtime.   
-E.g.: a card name. 
+E.g.: a card name.  
+(props = JSX attributes)
 
 state: useful when need changes at runtime.  
 E.g.: a card state such as "active" or "inactive". 
