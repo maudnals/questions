@@ -102,7 +102,7 @@ original state.
 * Keep the inner component functional  
 * If an event from inside the functional component needs to change state, e.g. change its age:  
    * pass the handler (defined in the container component) to the inner component as a **prop**  
-   * if the state change relates to this inner component (e.e. change own age), use **bind** : 
-   `increaseAgeHandler={this.increaseAgeHandler.bind(this, this.state.persons[2])}` 
-   Reminder: bind createa a new function, it doesn't execute anything.
+   * if need to pass arguments - for example if the state change relates to this inner component such as change own age - use **bind** :   
+   `increaseAgeHandler={this.increaseAgeHandler.bind(this, this.state.persons[2])}`   
+   Remember: bind createa a new function, it doesn't execute the function's inner code. 
 
