@@ -90,5 +90,6 @@ Use ES6 arrow functions to keep the reference `this`--- this class, to be able t
 ## How to change state? 
 Use `this.setState()`.  
 NOT NEEDED: `this.setState(Object.assign(this.state,...)`  
-React already does that under the hood within `setState()`.
+React already does that under the hood within `setState()`: the argument of `setState` gets merged with the
+original state.
 
