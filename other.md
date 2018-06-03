@@ -58,16 +58,23 @@ export default Person;
 `.js`
 
 ### Props vs State?    
+What they have in common:  
+* Both props and state are JS objects.   
+* Changes to props and state trigger an UI update.  
 
-Both propos and state are JS objects.
+How they're different:  
 
 Props = (JSX attributes) = passed from outside (i.e. from a parent=wrapping
-component to a child=embedded component). **Stays the same at runtime.**     
+component to a child=embedded component).  
 E.g.: a card name should be a prop.   
 
 State: managed inside. 
-**Can be changed at runtime**. When the state changes, and **only** when the state changes, React checks whether to update the DOM.  
-E.g.: a card state such as "active" or "inactive" should be a state. 
+**Can be changed at runtime from within**. When the state changes, React checks whether to update the DOM.  
+E.g.: a card state such as "active" or "inactive" should be a state.  
+NB:   
+* The name `state` is mandatory.  
+* State can only be manipulated by class-based components.  
+* Functional components can read it but not manipulate it.
 
 ## What's a react component?  
 A function that returns some JSX. 
