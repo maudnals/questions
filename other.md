@@ -10,7 +10,8 @@ JSX (return value of render() method) compiles to `React.createElement(...)`.
 
 
 ### What's JSX?  
-JS that looks like HTML. Complied onto JS via Babel.
+JSX is JS that looks like HTML. Compiled onto JS via Babel.  
+JSX is just syntactic sugar for JavaScript, allowing to write HTMLish code instead of nested `React.createElement(...)` calls.
 
 ### What are two ways of creating a react component?  
 **Dumb component (no state)**  
