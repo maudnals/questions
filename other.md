@@ -101,5 +101,5 @@ original state.
 * State remains in the container component  
 * Keep the inner component functional  
 * If an event from inside the functional component needs to change state, e.g. change its age:  
-  ** gddg
+   *  gddg
 
