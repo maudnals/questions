@@ -57,14 +57,15 @@ export default Person;
 ### What's the convention for a JSX file xtension?  
 `.js`
 
-### Props vs State?   
+### Props vs State?    
 
-Props = (JSX attributes) = passed from outside, stays the same at runtime.  
-Looks like a configuration (as a JS object, e.g. `{className: "app"}`).     
-E.g.: a card name.   
+Both propos and state are JS objects.
+
+Props = (JSX attributes) = passed from outside, stays the same at runtime.     
+E.g.: a card name should be a prop.   
 
 State: managed inside, useful when need changes at runtime.  
-E.g.: a card state such as "active" or "inactive". 
+E.g.: a card state such as "active" or "inactive" should be a state. 
 
 ## What's a react component?  
 A function that returns some JSX.
