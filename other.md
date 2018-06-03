@@ -104,5 +104,5 @@ original state.
    * pass the handler (defined in the container component) to the inner component as a **prop**  
    * if need to pass arguments - for example if the state change relates to this inner component such as change own age - use **bind** :   
    `increaseAgeHandler={this.increaseAgeHandler.bind(this, this.state.persons[2])}`   
-   Remember: bind createa a new function, it doesn't execute the function's inner code. 
+   Remember: bind creates a new function, it doesn't execute the function's inner code. 
 
