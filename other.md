@@ -14,7 +14,7 @@ JSX is JS that looks like HTML. Compiled onto JS via Babel.
 JSX is just syntactic sugar for JavaScript, allowing to write HTMLish code instead of nested `React.createElement(...)` calls.
 
 ### What are two ways of creating a react component?  
-**Dumb component (no state)**  
+**Dumb component (= stateless = functional = presentational)**  
 `Person.js`:   
 ```javascript
 import React from 'react';   
@@ -24,7 +24,7 @@ const person = (props) => {
 export default person;
 ```  
 
-**Smart component (internal state)**   
+**Smart component (= stateful = class-based = container)**   
 `Person.js`:   
 ```javascript
 import React, { Component } from 'react';   
@@ -34,7 +34,7 @@ class Person extens Component {
   }
 }  
 export default Person;
-```  
+```   
 
 ### What's the convention for a JSX file xtension?  
 `.js`
