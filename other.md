@@ -60,7 +60,7 @@ export default Person;
 ### Props vs State?    
 What they have in common:  
 * Both props and state are JS objects.   
-* Changes to props and state trigger an UI update.  
+* Changes to props and state trigger an UI update (a targeted DOM updated after running diff algorithm against virtual DOM).  
 
 How they're different:  
 
