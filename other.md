@@ -7,7 +7,10 @@ JSX (return value of render() method) compiles to `React.createElement(...)`.
 `X.js`:   
 `import Person from 'path/to/Person.js'; // !!! for JSX to understand Person as a react component the capital letter is a must (even if the export is default so in a non-react context it can be named whatever).` 
 
-
+### How is a react app architectured?  
+A react app is typucally component tree:  
+* one root component, the `App` component   
+* a potentially infinite amount of nested child components.
 
 ### What's JSX?  
 JSX is JS that looks like HTML. Compiled onto JS via Babel.  
