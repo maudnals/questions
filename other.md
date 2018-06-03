@@ -109,5 +109,11 @@ original state.
 ## How to apply styles?   
 In `Person.js`:
 `import './Person.css';` // syntax is... just like a JS import.  
-That's because of webpack: webpack will transform this and inject the right `style` tags in `index.html`.
+That's because of webpack: webpack will transform this and inject the right `style` tags in `index.html`.   
+With webpack's preconfig on `create-react-app`, the build also covers autoprefixing.
+
+## How to scope styles?   
+By default styles are not scoped.  
+2 ways:  
+* Apply `className="Person"` onto the wrapping div of the person component, and use this in `Person.css`.
 
