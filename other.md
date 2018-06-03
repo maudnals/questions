@@ -116,4 +116,4 @@ With webpack's preconfig on `create-react-app`, the build also covers autoprefix
 By default styles are not scoped.  
 2 ways:  
 * Apply `className="Person"` onto the wrapping div of the person component, and use this in `Person.css`.
-
+* Apply inline styles (using Person class variable `style` and then on the wrapping div, `style={style}`)
