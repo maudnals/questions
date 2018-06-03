@@ -1,6 +1,9 @@
 ### Where exactly is the `React` variable used in a React component?   
 JSX (return value of render() method) compiles to `React.createElement(...)`.   
 
+### What's JSX?  
+JS that looks like HTML. Complied onto JS via Babel.
+
 ### What are two ways of creating a react component?  
 **Dumb component (no state)**  
 `Person.js`:   
@@ -25,8 +28,16 @@ export default Person;
 ```  
 
 ### What's the convention for a JSX file xtension?  
-.jsx
+`.js`
 
-### props vs state?  
+### props vs state?   
+
 props = a configuration (as a JS object, e.g. `{className: "app"}`).  
-Stays the same at runtime.
+Stays the same at runtime.   
+E.g.: a card name. 
+
+state: useful when need changes at runtime.  
+E.g.: a card state such as "active" or "inactive". 
+
+## What's a react component?  
+A function that returns some JSX.
