@@ -95,5 +95,11 @@ React already does that under the hood within `setState()`: the argument of `set
 original state.  
 
 ## GOTCHAS  
-* when a prop is not passed, it fails silently. Just nothing displayed or called.
+* when a prop is not passed, it fails silently. Just nothing displayed or called.  
+
+## How to keep a lower-level component stateless?  
+* State remains in the container component  
+* Keep the inner component functional  
+* If an event from inside the functional component needs to change state, e.g. change its age:  
+  ** gddg
 
