@@ -124,4 +124,4 @@ React only renders to teh DOM when the condiyion is true.
 
 ## What's a must when rendering a list in react?  
 NB a list in react = anything using array map.  
-What's important is using a unique key ppty, to make virtual DOM diff possible and so that react can target re-rendering to only elements that changed. 
+What's important is using a unique key ppty, to make virtual DOM diff possible and so that react can target re-rendering to only elements that changed. Important for performance on larger lists.
