@@ -120,4 +120,8 @@ By default styles are not scoped.
 
 ## Conditional display?  
 React only renders to teh DOM when the condiyion is true. 
-! No block statemenets like `if` - only ternary operators are allowed.
+! No block statemenets like `if` - only ternary operators are allowed. 
+
+## What's a must when rendering a list in react?  
+NB a list in react = anything using array map.  
+What's important is using a unique key ppty, to make virtual DOM diff possible and so that react can target re-rendering to only elements that changed. 
