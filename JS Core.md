@@ -12,3 +12,6 @@
       }
     }
   }`
+ 
+**Remove an item from an array?**  
+Mutating: use `arr.splice(itemIndex, 1)`. !!! Splice is mutative and returms the removed element! So just call it, don;t use its return value.
