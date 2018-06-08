@@ -179,11 +179,12 @@ To do this, need to eject from create react app.
 * Stateful components, who manage state, should have a lean render method - they shouldn't be involved in UI manipulations too much.  
 * Always favor stateless components over stateful   
 * Structure:  
+ 
+`src`   
+|-- `assets`  
+|-- `containers`   
+|-- `components`   
 
-`src` 
-|-- `assets`
-|-- `containers` 
-|-- `components`  
 `index.js`  
 `index.css`  
 `registerServiceWorkers.js` 
