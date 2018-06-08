@@ -53,7 +53,15 @@ class Person extens Component {
   }
 }  
 export default Person;
-```   
+```    
+
+
+ | **Stateful** | **Stateless**
+--- | --- | ---   
+*Creation syntax* | `class X extends Component` | `const X = (props) => ...` 
+*Direct access to state* | yes (`this.state`) | no  
+*Direct access to props* | yes (`this.props`) | yes (`props`)  
+*Lifecycle hooks* | yes | no 
 
 ### What's the convention for a JSX file xtension?  
 `.js`
@@ -119,9 +127,54 @@ By default styles are not scoped.
 * Apply inline styles (using Person class variable `style` and then on the wrapping div, `style={style}`) 
 
 ## Conditional display?  
-React only renders to teh DOM when the condiyion is true. 
-! No block statemenets like `if` - only ternary operators are allowed. 
+React only renders to the DOM when the condition is true. 
+! No block statements like `if` - only ternary operators are allowed. 
 
 ## What's a must when rendering a list in react?  
 NB a list in react = anything using array map.  
-What's important is using a unique key ppty, to make virtual DOM diff possible and so that react can target re-rendering to only elements that changed. Important for performance on larger lists.
+What's important is using a unique key ppty, to make virtual DOM diff possible and so that react can target re-rendering to only elements that changed. Important for performance on larger lists.  
+
+# Limitations of inline styles 
+No pseudo selectors or media queries.
+
+
+# What's the good practice for inline styles declaration? 
+In return(), but : not inside the render function.  Do it cleanly outside, so that the JSX only contains <> and simple {}.
+
+# What's the good practice for conditional JSX?  
+Don't do it in return, 
+
+#Nice way to have multiple classes? 
+classes as an array, and then classes.push , classes.push, then in JSX classes.join(' ')
+#  Why the key ppty is important in lists
+Visible for example in the "highlight updated" of react developer tools.
+# JS Core:
+map(x, index) : index come sout of the box
+
+#What is the react-scripts package?
+It exposes the whole build workflow.
+
+#How do I manage my build config myself? 
+run eject: yarn eject
+
+
+#style loader vs css loader? 
+
+CSS loader is just a translater which resolves imports and URLs.
+ 
+* with theLess loader: Turn file.less into plain CSS  
+* with the CSS loader: Resolve all the imports and url(...)s in the CSS 
+* with the style loader: Insert those styles into the page  (STYLE LOADER IS THE ONE WHO DOES THE INSERT JOB)
+
+https://stackoverflow.com/questions/34039826/webpack-style-loader-vs-css-loader
+
+
+# How to scope styles?
+Use ~~Radium~~ CSS modules
+Class names will bre replaced by unique, scoped identifiers.
+Then one can import classes as a JS object.
+To do this, need to eject from create react app.
+
+
+# Architecture tip
+Stateful components, who manage state, should have a lean render method - they shouldn't be involved in UI manipulations too much.
