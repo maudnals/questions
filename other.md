@@ -56,7 +56,7 @@ export default Person;
 ```    
 
 
- | **Stateful** | **Stateless**
+. | **Stateful** | **Stateless**
 --- | --- | ---   
 *Creation syntax* | `class X extends Component` | `const X = (props) => ...` 
 *Direct access to state* | yes (`this.state`) | no  
@@ -90,22 +90,22 @@ NB:
 ## What's a react component?  
 A function that returns some JSX. 
 
-## What does `this` refers to in a `class X extends Component`?  
+### What does `this` refers to in a `class X extends Component`?  
 To the class (that's just ES6). 
 
-## About event handlers? 
+### About event handlers? 
 Use ES6 arrow functions to keep the reference `this`--- this class, to be able to access state. 
 
-## How to mutate the state? 
+### How to mutate the state? 
 Use `this.setState()`.  
 NOT NEEDED: `this.setState(Object.assign(this.state,...)`  
 React already does that under the hood within `setState()`: the argument of `setState` gets merged with the
 original state.  
 
-## GOTCHAS  
+### GOTCHAS  
 * when a prop is not passed, it fails silently. Just nothing displayed or called.  
 
-## How to keep a lower-level component stateless?  
+### How to keep a lower-level component stateless?  
 * State remains in the container component  
 * Keep the inner component functional  
 * If an event from inside the functional component needs to change state, e.g. change its age:  
@@ -114,54 +114,53 @@ original state.
    `increaseAgeHandler={this.increaseAgeHandler.bind(this, this.state.persons[2])}`   
    Remember: bind creates a new function, it doesn't execute the function's inner code.  
    
-## How to apply styles?   
+### How to apply styles?   
 In `Person.js`:
 `import './Person.css';` // syntax is... just like a JS import.  
 That's because of webpack: webpack will transform this and inject the right `style` tags in `index.html`.   
 With webpack's preconfig on `create-react-app`, the build also covers autoprefixing.
 
-## How to scope styles?   
+### How to scope styles?   
 By default styles are not scoped.  
 2 ways:  
 * Apply `className="Person"` onto the wrapping div of the person component, and use this in `Person.css`.
 * Apply inline styles (using Person class variable `style` and then on the wrapping div, `style={style}`) 
 
-## Conditional display?  
+### Conditional display?  
 React only renders to the DOM when the condition is true. 
 ! No block statements like `if` - only ternary operators are allowed. 
 
-## What's a must when rendering a list in react?  
+### What's a must when rendering a list in react?  
 NB a list in react = anything using array map.  
 What's important is using a unique key ppty, to make virtual DOM diff possible and so that react can target re-rendering to only elements that changed. Important for performance on larger lists.  
 
-# Limitations of inline styles 
+### Limitations of inline styles 
 No pseudo selectors or media queries.
 
 
-# What's the good practice for inline styles declaration? 
+### What's the good practice for inline styles declaration? 
 In return(), but : not inside the render function.  Do it cleanly outside, so that the JSX only contains <> and simple {}.
 
-# What's the good practice for conditional JSX?  
-Don't do it in return, 
+### What's the good practice for conditional JSX?  
+Don't do it in return. 
 
-#Nice way to have multiple classes? 
+### Nice way to have multiple classes? 
 classes as an array, and then classes.push , classes.push, then in JSX classes.join(' ')
-#  Why the key ppty is important in lists
+### Why the key ppty is important in lists
 Visible for example in the "highlight updated" of react developer tools.
-# JS Core:
+### JS Core:
 map(x, index) : index come sout of the box
 
-#What is the react-scripts package?
+### What is the react-scripts package?
 It exposes the whole build workflow.
 
-#How do I manage my build config myself? 
+### How can one manage my build config myself? 
 run eject: yarn eject
 
-
-#style loader vs css loader? 
+### Webpack: style-loader vs css-loader? 
 
 CSS loader is just a translater which resolves imports and URLs.
- 
+Workflow example: 
 * with theLess loader: Turn file.less into plain CSS  
 * with the CSS loader: Resolve all the imports and url(...)s in the CSS 
 * with the style loader: Insert those styles into the page  (STYLE LOADER IS THE ONE WHO DOES THE INSERT JOB)
@@ -169,12 +168,22 @@ CSS loader is just a translater which resolves imports and URLs.
 https://stackoverflow.com/questions/34039826/webpack-style-loader-vs-css-loader
 
 
-# How to scope styles?
+### How to scope styles?
 Use ~~Radium~~ CSS modules
 Class names will bre replaced by unique, scoped identifiers.
 Then one can import classes as a JS object.
 To do this, need to eject from create react app.
 
 
-# Architecture tip
-Stateful components, who manage state, should have a lean render method - they shouldn't be involved in UI manipulations too much.
+### Architecture tips
+* Stateful components, who manage state, should have a lean render method - they shouldn't be involved in UI manipulations too much.  
+* Always favor stateless components over stateful   
+* Structure:  
+
+`src` 
+|-- `assets`
+|-- `containers` 
+|-- `components`  
+`index.js`  
+`index.css`  
+`registerServiceWorkers.js` 
